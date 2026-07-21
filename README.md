@@ -1,4 +1,4 @@
-# realsense
+# Pipeline
 
 Intel RealSense D405 카메라와 MediaPipe를 사용해 손 관절 값을 추정하고,
 UI 및 UDP 전송으로 확인할 수 있는 실험용 스크립트 모음입니다.
