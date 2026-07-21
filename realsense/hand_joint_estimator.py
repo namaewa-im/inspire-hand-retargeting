@@ -435,6 +435,7 @@ class HandJointEstimator:
             palm_normal=palm_normal,
             cmc_to_mcp=thumb_mcp - thumb_cmc,
         )
+        thumb_cmc_yaw *= 2.0
 
         # Thumb pitch:
         # Use only the geometric bend between CMC->MCP and MCP->IP.
@@ -444,6 +445,7 @@ class HandJointEstimator:
             cmc_to_mcp=thumb_mcp - thumb_cmc,
             mcp_to_ip=thumb_ip - thumb_mcp,
         )
+        thumb_cmc_pitch *= 2.0
 
         # Four-finger MCP scores:
         # finger in palm plane        -> 0
